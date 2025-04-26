@@ -26,7 +26,7 @@ The kit includes:
 
 - Rust-based malicious PDF generator
 - Multi-victim WebSocket Reverse Shell
-- Native Rust C2 Server or Node.js C2 Server
+- Native Rust C2 Server 
 - Full browser detection (only attacks Firefox)
 - Auto-reconnect shell persistence
 - Professional multi-victim management
