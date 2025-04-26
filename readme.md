@@ -136,9 +136,10 @@ http://your-ip:8080/index.html
 
 | Command | Description |
 |:-------:|:-----------:|
-| `list` | Show connected victims |
+| `list` | List available modules |
 | `select <id>` | Control specific victim |
-| `broadcast` | Send command to all victims |
+| `send <raw_js>` | Send raw JavaScript |
+| `inject <module>` | Inject a payload module |
 | `exit` | Exit server |
 
 Inside a selected victim:
