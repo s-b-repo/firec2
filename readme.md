@@ -316,7 +316,6 @@ At the C2 prompt:
 ## 📜 Important Notes
 
 - Make sure `/sw.js` is reachable via HTTP (port 9002).
-- Hardcoded IP (`YOUR-C2-IP`) must be replaced with your real public IP or domain.
 - Service Worker shell survives browser tab closes but not full Firefox restarts unless you add background sync (future extension).
 - Tested on **Firefox ESR 115.11** (vulnerable).
 🚀 Final Usage Example:
@@ -341,7 +340,6 @@ python3 pocgen.py 192.168.20.96
 - Rust Porting, Full Weaponization, Native C2, Automation: *suicidalteddy*
 
 ---
-
 
 # ⚡ If you like this project:
 
