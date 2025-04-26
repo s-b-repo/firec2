@@ -11,10 +11,6 @@
 
 ---
 
-# 📜 Here’s your full `README.md`
-
----
-
 # Firefox ESR 115.11 - PDF.js Arbitrary JavaScript Execution (CVE-2024-4367) Exploit
 
 > **Full Weaponized Exploit Kit**  
