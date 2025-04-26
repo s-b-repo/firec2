@@ -194,14 +194,6 @@ Inside a selected victim:
 
 ---
 
----
-
-\
-
-
-
----
-
 ## 📦 Project Structure
 
 | File/Folder | Purpose |
