@@ -6,7 +6,7 @@
 ✅ Full Usage  
 ✅ Hosting instructions  
 ✅ Attack flow  
-✅ C2 options (Node.js or Rust-native)  
+✅ C2 options (Rust-native)  
 ✅ OPSEC notes (very important)
 
 ---
@@ -315,10 +315,11 @@ http://YOUR-IP:8080/index.html
 
 At the C2 prompt:
 
-- `inject <module>` → inject prebuilt payloads
-- `list modules` → list available modules
-- `send <raw_js>` → send custom JavaScript commands
-
+               "Available Commands:
+             inject <module>  - Inject a payload module
+            list modules     - List available modules
+              send <raw_js>    - Send raw JavaScript
+            
 ---
 
 ## 🧠 Internals Summary
